@@ -47,49 +47,159 @@ table {
   border-spacing: 0;
 }
 
-/*End of Eric Meyer Reset. Beginning of custom css */
+/* End of Eric Meyer Reset. 
 
+/* Clear Fix */
 
-div {
-  max-width: 1024px;
-  margin: auto;
-  background-color: #e3e3e3;
+.group {
+  zoom: 1;
+}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+
+/* List styling */
+
+#navcontainer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#navcontainer ul li {
+  display: inline;
+  font-size: 20px;
+  }
+
+#navcontainer ul li a {
+  color: gray;
+  padding: 10px 20px;
+  text-decoration: none;
+}  
+
+#navcontainer ul li a:hover {
+  color: white;
+}
+
+li {
+  margin: 0;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Beginning of customized CSS */
+
+a {
+  color: purple;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
+
+body {
+  background-color: white;
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+em {
+  font-style: italic;
 }
 
 h1, h2, h3, h4, h5 {
-  color: red;
   font-weight: bold;
   margin-bottom: 24px;
 }
 
 h1 {
+  color: white;
   font-size: 36px;
-  margin-bottom: 2px;
 }
+
 h2, h3, h4, h5, h6 {
+  color: black;
   font-size: 24px;
 }
 
-ul {
-    list-style-image: none; 
-    list-style-position: outside; 
-    list-style-type: disc; 
-    padding-left: 60px;
-    }
+header {
+  background-color: purple;
+  border-bottom: 3px solid black;
+  font-family: Helvetica, Arial, sans-serif; 
+  margin-bottom: 36px;
+  padding: 30px 0;
+}
 
 p {
   color: black;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
+  line-height: 20px;
   margin-bottom: 20px;
 }
 
-.center {
-  text-align: center;
+footer {
+  background-color: gray;
+  border-top: 3px solid black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px; 
+  margin: 50px 0;
+  padding: 10px 0 30px 0;
 }
 
 strong {
   font-weight: bold;
 }
-em {
-  font-style: italic;
+
+.center {
+    text-align: center;
 }
+
+.container {
+  margin: auto;
+  max-width: 960px;
+}
+
+.main-article {
+  max-width: 640px;
+  padding: 0 10px;
+}
+
+#main-photo {
+  border: 2px solid black;
+  display: block;
+  float: right;
+  margin: 0 10px 0 0;
+  width: 220px
+  height: 228px;
+  padding: 10px;
+}
+
+/* Shay Examples */
+
+.col {
+  background: blue;
+  border: 5px solid sandybrown;
+  color: #fff;
+  float: left;
+  margin: 10px;
+  padding: 20px;
+  width: 180px
+  }
+
+ .primary-logo {
+  line-height: 1;
+  text-align: center
+} 
+
+
+
