@@ -51,9 +51,6 @@ table {
 
 /* Clear Fix */
 
-.group {
-  zoom: 1;
-}
 .group:before,
 .group:after {
   content: "";
@@ -61,6 +58,11 @@ table {
 }
 .group:after {
   clear: both;
+}
+
+.group {
+  clear: both;
+  zoom: 1;
 }
 
 /* List styling */
@@ -161,7 +163,7 @@ strong {
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .container {
@@ -169,18 +171,21 @@ strong {
   max-width: 960px;
 }
 
-.main-article {
-  max-width: 640px;
-  padding: 0 10px;
+.main-col-1 {
+  float: left;
+  margin: 0 10px;
+  max-width: 676px;
 }
 
-#main-photo {
-  border: 2px solid black;
+.main-col-2 {
   display: block;
   float: right;
   margin: 0 10px 0 0;
-  width: 220px
-  height: 228px;
+  width: 220px;
+}
+
+img[src="img/AH_profile.jpg"] {
+  border: 2px solid black;
   padding: 10px;
 }
 
