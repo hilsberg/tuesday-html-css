@@ -47,9 +47,10 @@ table {
   border-spacing: 0;
 }
 
-/* End of Eric Meyer Reset. 
-
-/* Clear Fix */
+/* 
+---------------------------------
+  U T I L I T Y
+--------------------------------- */
 
 .group:before,
 .group:after {
@@ -61,11 +62,93 @@ table {
 }
 
 .group {
-  clear: both;
   zoom: 1;
 }
 
-/* List styling */
+/* 
+------------------------------------
+  T Y P O G R A P H Y
+------------------------------------ */
+
+a {
+  color: purple;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
+
+body {
+  background-color: white;
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+em {
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+h1 {
+  color: white;
+  font-family: 'Droid Serif', serif;
+  font-size: 36px;
+}
+
+.post h1 {
+  color: black;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h2, h3, h4, h5, h6 {
+  color: black;
+  font-size: 24px;
+}
+
+header {
+  background-color: #520063;
+  background-image:     -ms-linear-gradient(bottom, #530063 0%, #B774C4 100%);
+  background-image:    -moz-linear-gradient(bottom, #530063 0%, #B774C4 100%);
+  background-image:      -o-linear-gradient(bottom, #530063 0%, #B774C4 100%);
+  background-image:        -webkit-gradient(linear, left bottom, left top, color-stop(0, #530063), color-stop(1, #B774C4));
+  background-image: -webkit-linear-gradient(bottom, #530063 0%, #B774C4 100%);
+  background-image:         linear-gradient(to top, #530063 0%, #B774C4 100%);
+  border-bottom: 3px solid black;
+  font-family: Helvetica, Arial, sans-serif; 
+  margin-bottom: 36px;
+  padding: 30px 0;
+}
+
+p {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: gray;
+  border-top: 3px solid black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px; 
+  margin: 50px 0;
+  padding: 10px 0 30px 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* 
+----------------------------------
+  L I S T  S T Y L I N G 
+---------------------------------- */
 
 #navcontainer ul {
   list-style-type: none;
@@ -98,90 +181,47 @@ ul {
   list-style: none;
 }
 
-/* Beginning of customized CSS */
 
-a {
-  color: purple;
-  text-decoration: none;
-}
-
-a:hover {
-  color: gray;
-}
-
-body {
-  background-color: white;
-  font-family: Helvetica, Arial, sans-serif; 
-}
-
-em {
-  font-style: italic;
-}
-
-h1, h2, h3, h4, h5 {
-  font-weight: bold;
-  margin-bottom: 24px;
-}
-
-h1 {
-  color: white;
-  font-size: 36px;
-}
-
-h2, h3, h4, h5, h6 {
-  color: black;
-  font-size: 24px;
-}
-
-header {
-  background-color: purple;
-  border-bottom: 3px solid black;
-  font-family: Helvetica, Arial, sans-serif; 
-  margin-bottom: 36px;
-  padding: 30px 0;
-}
-
-p {
-  color: black;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 20px;
-}
-
-footer {
-  background-color: gray;
-  border-top: 3px solid black;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px; 
-  margin: 50px 0;
-  padding: 10px 0 30px 0;
-}
-
-strong {
-  font-weight: bold;
-}
+/*
+---------------------------------------------
+  S T R U C T U R E
+--------------------------------------------- */
 
 .center {
   text-align: center;
 }
 
 .container {
-  margin: auto;
-  max-width: 960px;
+  margin: 0 auto;
+  width: 960px;
 }
 
-.main-col-1 {
+.alpha {
   float: left;
   margin: 0 10px;
-  max-width: 676px;
+  width: 676px;
 }
 
-.main-col-2 {
-  display: block;
+.omega {
   float: right;
-  margin: 0 10px 0 0;
-  width: 220px;
+  margin: 0 10px;
+  width: 244px;
+}
+
+.post {
+  border-bottom: 1px solid black;
+  float: left;
+  margin: 0 0 30px 0;
+  padding-top: 5px;
+  width: 547px;
+}
+
+.date {
+  float: left;
+  font-style: italic;
+  font-size: 14px;
+  padding: 0 5px;
+  width: 109px;
 }
 
 img[src="img/AH_profile.jpg"] {
@@ -189,7 +229,105 @@ img[src="img/AH_profile.jpg"] {
   padding: 10px;
 }
 
-/* Shay Examples */
+/* 
+---------------------------------------------
+  E X P E R I M E N T S
+--------------------------------------------- */
+
+.alert {
+  border-radius: 6px;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 0 20px 0;
+  padding: 0 10px 0 0;
+  overflow: hidden;
+}
+
+.alert .icon {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.alert h5, .alert p {
+  color: white;
+}
+.alert h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  padding-top: 17px;
+}
+
+.alert p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.alert.tip {
+  background-color: #3fbafc;
+  box-shadow: #3fbafc 0 1px rgba(0, 0, 0, .5);
+  text-shadow: #3fbafc 0 1px rgba(0, 0, 0, .5);
+}
+
+.alert.tip .icon {
+  background: #2176b0 url(../img/lightbulb.png) 50% 50% no-repeat;
+}
+
+.alert.achieve {
+  background-color: #8ed055;
+  box-shadow: #8ed055 0 1px rgba(0, 0, 0, .5);
+  text-shadow: #8ed055 0 1px rgba(0, 0, 0, .5);
+}
+
+.alert.achieve .icon {
+  background: #689a3e url(../img/lightbulb.png) 50% 50% no-repeat;
+}
+
+.alert.error {
+  background-color: #ebd549;
+  box-shadow: #ebd549 0 1px rgba(0, 0, 0, .5);
+  text-shadow: #ebd549 0 1px rgba(0, 0, 0, .5);
+}
+
+.alert.error .icon {
+  background: #bfa541 url(../img/lightbulb.png) 50% 50% no-repeat;
+}
+
+.alert.warning {
+  background-color: #f75959;
+  box-shadow: #f75959 0 1px rgba(0, 0, 0, .5);
+  text-shadow: #f75959 0 1px rgba(0, 0, 0, .5);
+}
+
+.alert.warning .icon {
+  background: #b93f3c url(../img/lightbulb.png) 50% 50% no-repeat;
+}
+
+.yellowback {
+  background-color: #fff9ad;
+  height: 400px;
+  width: 700px;
+  padding: 20px 20px 0 20px;
+}
+
+/* LESSSON TESTS */
+
+#test li {
+  list-style-type: lower-roman;
+}
+
+#dingbat li {
+  list-style: none;
+}
+#dingbat li:before {
+  content: "\2708"; 
+  margin-right: 6px;
+}
+
+/* 
+------------------------------------
+  S H A Y  E X A M P L E S
+------------------------------------ */
 
 .col {
   background: blue;
@@ -205,6 +343,13 @@ img[src="img/AH_profile.jpg"] {
   line-height: 1;
   text-align: center
 } 
+
+
+/* E R I C  E X A M P L E */
+
+.wrapper-container .alpha,
+.wrapper-container .omega{ float: left; width: 300px; padding: 20px; margin: 0 20px 20px 0;  background: blue; color: #fff; }
+.wrapper-container .clear{ clear: both; }
 
 
 
