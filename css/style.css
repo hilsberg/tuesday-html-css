@@ -62,7 +62,7 @@ table {
 }
 
 .group {
-  zoom: 1;
+  *zoom: 1;
 }
 
 /* 
@@ -97,6 +97,10 @@ h1 {
   color: white;
   font-family: 'Droid Serif', serif;
   font-size: 36px;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .post h1 {
@@ -212,7 +216,6 @@ ul {
   border-bottom: 1px solid black;
   float: left;
   margin: 0 0 30px 0;
-  padding-top: 5px;
   width: 547px;
 }
 
@@ -224,9 +227,13 @@ ul {
   width: 109px;
 }
 
-img[src="img/AH_profile.jpg"] {
+img {
   border: 2px solid black;
   padding: 10px;
+}
+
+iframe {
+  margin-bottom: 20px;
 }
 
 /* 
@@ -239,10 +246,10 @@ img[src="img/AH_profile.jpg"] {
   font-family: Helvetica, Arial, sans-serif;
   margin: 0 0 20px 0;
   padding: 0 10px 0 0;
-  overflow: hidden;
 }
 
 .alert .icon {
+  border-radius: 6px 0 0 6px;
   float: left;
   width: 80px;
   height: 80px;
@@ -252,6 +259,7 @@ img[src="img/AH_profile.jpg"] {
 .alert h5, .alert p {
   color: white;
 }
+
 .alert h5 {
   font-size: 18px;
   margin-bottom: 5px;
@@ -303,25 +311,212 @@ img[src="img/AH_profile.jpg"] {
   background: #b93f3c url(../img/lightbulb.png) 50% 50% no-repeat;
 }
 
-.yellowback {
+.alert-back {
   background-color: #fff9ad;
   height: 400px;
+  margin: 0 auto;
   width: 700px;
   padding: 20px 20px 0 20px;
 }
 
-/* LESSSON TESTS */
-
-#test li {
-  list-style-type: lower-roman;
+.month-back {
+  background-color: #fff9ad;
+  height: 260px;
+  margin: 50px auto 20px;
+  padding: 20px;
+  width: 280px;
 }
 
-#dingbat li {
-  list-style: none;
+.month {
+  border: 1px solid gray;
+  border-radius: 6px;
 }
-#dingbat li:before {
-  content: "\2708"; 
-  margin-right: 6px;
+
+.month ol {
+  list-style-type: none;
+  margin: 0;
+}
+
+.month-header {
+  background-color: #35a9f6;
+  padding: 10px 0;
+}
+
+.month-header p {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  margin-bottom: 0px;
+  text-shadow: black 0 1px rgba(0, 0, 0, .5);
+}
+
+.day {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.day li {
+  color: #999999;
+  display: inline-block;
+  font-size: 10px;
+  padding: 0px;
+  text-align: center;
+  width: 35px;
+}
+
+.cal-date li {
+  background-color: #fefefe;
+  border-top: 1px solid gray; 
+  border-right: 1px solid gray;
+  display: inline-block;
+  float: left;
+  padding: 10px 0;
+  text-align: center;
+  width: 36px;
+}
+
+/* F O R M */
+
+.form-block{
+  padding: 0 0 20px 0; 
+  margin: 0;
+}
+
+.form-block *{
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+.form-block li{ 
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+fieldset {
+  background-color: #d3d3d3;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+fieldset p {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0 3px;
+}
+
+fieldset p.nl-pitch {
+  color: #0000ff;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+}
+
+input {
+  background: #fff;
+  border: 2px solid #c6c9cc;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 5px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: purple;
+  border-radius: 6px;
+  color: #fff;
+  font-family: 'Helvetica Neue' Helvetica Arial sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+  width: auto;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0 3px;
+}
+
+textarea {
+  height: 50px;
+  margin: 0 0 20px 0;
+  width: 100%;
+  padding: 5px;
+}
+
+.radio label {
+  float: left;
+  display: inline;
+  line-height: 22px;
+  margin: 0 20px 0 0;
+}
+
+
+
+/* F O O T E R  S O C I A L  I C O N S */
+
+.footer-social {
+  margin: 0 auto 20px auto;
+  overflow: hidden;
+  padding: 0;
+  width: 80px;
+}
+
+.footer-social li {
+  float: left; 
+  display: inline;
+  margin: 0 0 0 10px; padding: 0;
+}
+
+.footer-social li:first-child{
+  margin-left: 0;
+}
+
+.footer-social li a{
+  background-image: url('../img/social-sprite.png');
+  display: block;
+  padding: 0; margin: 0;
+  width: 20px; height: 20px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.facebook-icon a{
+  background-position: 0 -25px;
+}
+
+.twitter-icon a{
+  background-position: 0 0;
+}
+
+.googleplus-icon a{
+  background-position: 0 -125px;
+}
+
+i {
+  background: url('img/social-sprite.png') no-repeat;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
 }
 
 /* 

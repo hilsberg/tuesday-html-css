@@ -34,7 +34,64 @@
 		 				<img src="img/AH_profile.jpg" width="220" height="228" alt="Andrew Hilsberg photo">
 		 			</section>
 		 			<section>
-		 				<p>2nd Aside Goes Here</p>
+		 				<form action="#" method="post">
+		 					<fieldset>
+								<ul class="form-block">
+								<li>
+								<p class="nl-pitch">
+								Sign up for my awesome, <span class="uppercase">free</span> marketing newsletter!
+								</p>
+								</li>
+								<li>
+								<label for="email">Email Address</label>
+								<input type="email" name="email" id="email" required>
+								</li>
+								<li>
+								<label for="firstname"> First Name</label>
+								<input type="text" name="firstname" id="firstname">
+								</li>
+								<li>
+								<label for "zip">Zip Code</label>
+								<input type="text" name="zip" id="zip">
+								</li>
+								<li>
+								<p>
+								Preferred city
+								</p>
+								<select name="city">
+								<option value="">Select city</option>
+								<option value="New York">New York</option>
+								<option value="Chicago">Chicago</option>
+								<option value="Los Angeles">Los Angeles</option>
+								</select>
+								</li>
+								<li class="radio group">
+								<p>
+								List
+								</p>
+								<label><input type="radio" name="listname" value="sports"> Sports</label>
+								<label><input type="radio" name="listname" value="music"> Music</label>
+								</li>
+								<li>
+								<p>
+								Day of week
+								</p>
+								<label><input type="checkbox" name="send-date" value="Monday"> Mon</label>
+								<label><input type="checkbox" name="send-date" value="Wednesday"> Wed</label>
+								<label><input type="checkbox" name="send-date" value="Friday"> Fri</label>
+								</li>
+								<li>
+								<p>
+								Additional comments:
+								</p>
+								<textarea name="comments" placeholder="Add comments"></textarea>
+								</li>
+								<li>
+								<input type="submit" name="nl_submit" id="nl_submit" value="Sign Up Now!">
+								</li>
+								</ul>
+		 					</fieldset>
+		 				</form>	
 		 			</section>	
 		 		</aside>	
 		 	</div>	
