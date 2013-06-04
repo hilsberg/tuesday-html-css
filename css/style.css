@@ -52,6 +52,9 @@ table {
   U T I L I T Y
 --------------------------------- */
 
+.group {
+  *zoom: 1;
+}
 .group:before,
 .group:after {
   content: "";
@@ -59,10 +62,6 @@ table {
 }
 .group:after {
   clear: both;
-}
-
-.group {
-  *zoom: 1;
 }
 
 /* 
@@ -238,7 +237,7 @@ iframe {
 
 /* 
 ---------------------------------------------
-  E X P E R I M E N T S
+  B A C K G R O U N D   E X P E R I M E N T 
 --------------------------------------------- */
 
 .alert {
@@ -319,6 +318,12 @@ iframe {
   padding: 20px 20px 0 20px;
 }
 
+
+/* 
+---------------------------------------------
+  L I S T   E X P E R I M E N T 
+--------------------------------------------- */
+
 .month-back {
   background-color: #fff9ad;
   height: 260px;
@@ -330,6 +335,7 @@ iframe {
 .month {
   border: 1px solid gray;
   border-radius: 6px;
+  overflow: hidden;
 }
 
 .month ol {
@@ -371,10 +377,116 @@ iframe {
   border-right: 1px solid gray;
   display: inline-block;
   float: left;
+  font-size: 14px;
+  font-weight: bold;
   padding: 10px 0;
   text-align: center;
-  width: 36px;
+  width: 38px;
 }
+
+.previous-month {
+  color: #ccc;
+}
+
+li.today {
+  background-color: #35a9f6;
+  color: white;
+}
+
+li.special {
+  color: #35a9f6;
+}
+
+
+/* 
+---------------------------------------------
+  T A B L E   E X P E R I M E N T 
+--------------------------------------------- */
+
+.table-back {
+  background-color: #fff9ad;
+  height: 579px;
+  margin: 0 auto;
+  width: 680px;
+  padding: 20px;
+}
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td {
+  border: 1px solid #c6c9cc;
+  font-family: Helvetica, Arial, sans-serif;
+  vertical-align: top;
+}
+
+.schedule {
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+.schedule-header th {
+  background-color: #2ea0ec;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+tbody td {
+  background: #fff;
+  background: -webkit-linear-gradient(#fff, #f3f3f3);
+  background:    -moz-linear-gradient(#fff, #f3f3f3);
+  background:     -ms-linear-gradient(#fff, #f3f3f3);
+  background:      -o-linear-gradient(#fff, #f3f3f3);
+  background:         linear-gradient(#fff, #f3f3f3);
+  padding: 10px;
+}
+
+.flight-no, .flight-time {
+  font-weight: bold;
+  padding: 0;
+}
+
+.airline, .airport {
+  display: block;
+  color: #999;
+  font-size: 12px;
+  padding: 0;
+}
+
+.city {
+  display: block;
+  color: #2688cf;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.on-time {
+  color: #7dba48;
+}
+
+.delayed {
+  color: #f3d048;
+}
+
+.cancelled {
+  color: #d94240;
+}
+.status {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.air-logo {
+  float: left;
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+
 
 /* F O R M */
 

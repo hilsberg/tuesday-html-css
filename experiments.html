@@ -61,10 +61,12 @@
 									<li>S</li>
 								</ol>	
 								<ol class="cal-date">
-									<li start="28">28</li>
-									<li>29</li>
-									<li>30</li>
-									<li>31</li>
+									<div class="previous-month">
+										<li start="28">28</li>
+										<li>29</li>
+										<li>30</li>
+										<li>31</li>
+									</div>	
 									<li value="1">1</li>
 									<li>2</li>
 									<li>3</li>
@@ -76,7 +78,7 @@
 									<li>9</li>
 									<li>10</li>
 									<li>11</li>
-									<li>12</li>
+									<li class="special">12</li>
 									<li>13</li>
 									<li>14</li>
 									<li>15</li>
@@ -88,7 +90,7 @@
 									<li>21</li>
 									<li>22</li>
 									<li>23</li>
-									<li>24</li>
+									<li class="today">24</li>
 									<li>25</li>
 									<li>26</li>
 									<li>27</li>
@@ -99,6 +101,95 @@
 								</ol>
 						</div>	
 					</section>	
+					<section class="table-back">
+						<table class="schedule">
+							<thead>
+								<tr class="schedule-header">
+									<th scope="col">Flight</th>
+									<th scope="col">Departure</th>
+									<th scope="col">Arrival</th>
+								</tr>
+							</thead>
+							<tbody class="group">
+								<tr>
+									<td>
+										<img src="img/aa_40x40.jpg" class="air-logo">
+										<span class="flight-no">1341</span> 
+										<span class="airline">American Airlines</span>
+										<span class="status on-time">On Time</span>
+									</td>
+									<td>
+										<span class="flight-time">7:05 am</span>
+										<span class="city">Chicago, IL</span> 
+										<span class="airport">Chicago O'Hare International Airport (ORD)</span></td>
+									<td>
+										<span class="flight-time">9:55 am</span>
+										<span class="city">San Francisco, CA</span> 
+										<span class="airport">San Francisco International Airport (SFO)</span></td>
+								</tr>
+								<tr>
+									<td>
+										<img src="img/aa_40x40.jpg" class="air-logo">
+										<span class="flight-no">658</span> 
+										<span class="airline">American Airlines</span> 
+										<span class="status on-time"><span class="bullet"></span> On Time</span></td>
+									<td>
+										<span class="flight-time">9:00 am</span>
+										<span class="city">Chicago, IL</span> 
+										<span class="airport">Chicago O'Hare International Airport (ORD)</span></td>
+									<td>
+										<span class="flight-time">1:05 pm</span> 
+										<span class="city">Miami, FL</span>
+										<span class="airport">Miami International Airport (MIA)</span></td>
+								</tr>
+								<tr>
+									<td>
+										<img src="img/delta_40x40.jpg" class="air-logo">
+										<span class="flight-no">4487</span> 
+										<span class="airline">Delta</span> 
+										<span class="status on-time">On Time</span></td>
+									<td>
+										<span class="flight-time">12:40 pm</span> 
+										<span class="city">Chicago, IL</span> 
+										<span class="airport">Chicago O'Hare International Airport (ORD)</span></td>
+									<td>
+										<span class="flight-time">3:09 pm</span> 
+										<span class="city">Salt Lake City, UT</span> 
+										<span class="airport">Salt Lake City International Airport (SLC)</span></td>
+								</tr>
+								<tr>
+									<td>
+										<img src="img/aa_40x40.jpg" class="air-logo">
+										<span class="flight-no">1051</span> 
+										<span class="airline">American Airlines</span> 
+										<span class="status delayed">Delayed</span></td>
+									<td>
+										<span class="flight-time">12:55 pm</span> 
+										<span class="city">Chicago, IL</span> 
+										<span class="airport">Chicago O'Hare International Airport (ORD)</span></td>
+									<td>
+										<span class="flight-time">3:50 pm</span> 
+										<span class="city">Austin, TX</span> 
+										<span class="airport">Austin-Bergstrom International Airport (AUS)</span></td>
+								</tr>
+								<tr>
+									<td>
+										<img src="img/delta_40x40.jpg" class="air-logo">
+										<span class="flight-no">1977</span> 
+										<span class="airline">Delta</span> 
+										<span class="status cancelled">Cancelled</span></td>
+									<td>
+										<span class="flight-time">6:00 pm</span> 
+										<span class="city">Chicago, IL</span> 
+										<span class="airport">Chicago O'Hare International Airport (ORD)</span></td>
+									<td>
+										<span class="flight-time">9:05 pm</span> 
+										<span class="city">Atlanta, GA</span>
+										<span class="airport">Hartsfield-Jackson Atlanta International Airport (ATL)</span></td>
+								</tr>
+							</tbody>
+						</table>	
+					</section>
 				</div>
 				<footer class="center">
 		 			<ul class="footer-social">
