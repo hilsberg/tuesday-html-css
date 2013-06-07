@@ -106,6 +106,7 @@ h1 {
   color: black;
   font-size: 24px;
   line-height: 32px;
+  margin-top: -8px;
 }
 
 h2, h3, h4, h5, h6 {
@@ -419,12 +420,12 @@ li.special {
 th, td {
   border: 1px solid #c6c9cc;
   font-family: Helvetica, Arial, sans-serif;
-  vertical-align: top;
 }
 
 .schedule {
   border: 1px solid gray;
   border-radius: 6px;
+  overflow: hidden;
 }
 
 .schedule-header th {
@@ -441,25 +442,62 @@ tbody td {
   background:     -ms-linear-gradient(#fff, #f3f3f3);
   background:      -o-linear-gradient(#fff, #f3f3f3);
   background:         linear-gradient(#fff, #f3f3f3);
-  padding: 10px;
+  padding: 10px 0 15px 20px;
 }
 
-.flight-no, .flight-time {
-  font-weight: bold;
-  padding: 0;
-}
-
-.airline, .airport {
+.small-header {
   display: block;
+  font-weight: bold;
+  padding: 8px 0 5px;
+}
+
+td p {
   color: #999;
   font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 0;
   padding: 0;
 }
 
-.city {
-  display: block;
+.logo-column .small-header {
+  padding-bottom: 2px;
+}
+
+.logo-column p {
+  padding-bottom: 5px;
+}
+
+td h5 {
   color: #2688cf;
   font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+/* IF I FLOATED AIRLINE LOGOS... 
+.air-logo {
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+*/
+
+.logo-column {
+  padding-left: 60px;
+}
+
+.logo-column.airline-aa {
+  background: url(../img/aa_40x40.jpg) 10px 10px no-repeat;
+}
+
+.logo-column.airline-delta {
+  background: url(../img/delta_40x40.jpg) 10px 10px no-repeat;
+}
+
+.status {
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -473,17 +511,6 @@ tbody td {
 
 .cancelled {
   color: #d94240;
-}
-.status {
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.air-logo {
-  float: left;
-  height: 40px;
-  margin-right: 10px;
-  width: 40px;
 }
 
 
